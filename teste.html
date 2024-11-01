@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executores</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(270deg, cyan, blue); /* Gradiente do fundo em movimento */
+            background-size: 400% 400%; /* Aumenta o tamanho do gradiente */
+            animation: gradient 15s ease infinite; /* Animação do fundo */
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo da área dos botões em preto transparente */
+            padding: 20px;
+            border-radius: 10px; /* Borda arredondada para a área dos botões */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para a área dos botões */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+            background: linear-gradient(270deg, red, yellow); /* Gradiente para o título */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* Texto com preenchimento transparente */
+            animation: titleAnimation 5s ease infinite; /* Animação do título */
+        }
+
+        @keyframes titleAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 200px; /* Largura dos botões */
+        }
+
+        .button {
+            background-color: rgba(0, 0, 255, 0.7); /* Fundo azul do botão */
+            border: none; /* Sem borda */
+            border-radius: 10px; /* Bordas arredondadas nos botões */
+            color: white; /* Cor do texto em branco */
+            font-size: 1.2em;
+            padding: 15px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            text-align: center;
+            animation: buttonColor 5s ease infinite; /* Animação da cor do botão */
+        }
+
+        @keyframes buttonColor {
+            0% {
+                background-color: rgba(0, 0, 255, 0.7); /* Azul claro */
+            }
+            50% {
+                background-color: rgba(0, 255, 0, 0.7); /* Verde claro */
+            }
+            100% {
+                background-color: rgba(0, 0, 255, 0.7); /* Azul claro */
+            }
+        }
+
+        .button:active {
+            transform: rotateY(180deg); /* Girar em 3D ao pressionar */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Executores</h1>
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='https://www.mediafire.com/file/lzfe26ci5ymxi2u/Roblox_Arceus_X_NEO_1.4.5.apk/file'">Arceus X</button>
+            <button class="button" onclick="window.location.href='https://www.mediafire.com/file/j2n5f6vdu7f5v3j/Roblox_Arceus_X_Admin_1.0.5.apk/file'">Arceus X • Admin</button>
+            <button class="button" onclick="window.location.href='https://www.mediafire.com/file/7w69dwbq6xvzk6c/Delta-2.647.716.apk/file'">delta</button>
+            <button class="button" onclick="window.location.href='https://www.mediafire.com/file/8e9oflnhl6oz923/Fluxus_V2.647_%252864bit%2529.apk/file'">fluxus 64bits</button>
+            <button class="button" onclick="window.location.href='https://www.mediafire.com/file/71gyv1vl28n61og/Fluxus_V2.647_%252832bit%2529.apk/file'">fluxus 32bits</button>
+            <button class="button" onclick="window.location.href='https://www.example.com'">shortly</button>
+            <button class="button" onclick="window.location.href='https://www.example.com'">shortly. </button>
+            <button class="button" onclick="window.location.href='https://www.example.com">shortly </button>
+            <button class="button" onclick="window.location.href='https://www.example.com'">shortly </button>
+            <button class="button" onclick="alert('Feito por ? Dog')">Créditos</button>
+        </div>
+    </div>
+</body>
+</html>
